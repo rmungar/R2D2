@@ -21,7 +21,6 @@ fun mover(vararg movs: Int) {
     var posx = 0
     var posy = 0
     var direccion = 1
-    var dir = ""
     for (movimiento in movs) {
         when (direccion) {
             1 -> {
