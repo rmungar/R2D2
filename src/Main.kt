@@ -1,13 +1,13 @@
 
 
 fun main(){
-    r2d2_1() // FUNCIONA CON VALORES PREDEFINIDOS
-    r2d2_2() // FUNCIONA CON VALORES INGRESADOS POR EL USUARIO
+    r2d2v1() // FUNCIONA CON VALORES PREDEFINIDOS
+    r2d2v2() // FUNCIONA CON VALORES INGRESADOS POR EL USUARIO
 }
 /*
  * Esta función solo le va a pasar los parametros a la función que mueve el robot
  */
-fun r2d2_1() {
+fun r2d2v1() {
     mover(10, 5, -2)
     mover(0, 0, 0)
     mover()
@@ -58,7 +58,7 @@ fun mover(vararg movs: Int) {
     }
 }
 
-fun r2d2_2(){
+fun r2d2v2(){
     print("Ingrese una lista de movimiento con el siguiente formato (5, -9, 25) -> ")
     val movs = readln().split(", ")
     var posx = 0
